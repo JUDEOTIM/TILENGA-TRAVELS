@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TILENGA Travels Uganda</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- header section starts -->
+<header>
+
+    <div id="menu-bar" class="fas fa-bar"></div>
+
+    <a href="#" class="logo"><span>TILENGA T</span>ravels</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+        <button class="btnlogin-popup">Login</button>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search Here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<!-- header section ends -->
+
+<!-- Login form container -->
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+    </span> 
+    <div class="form-box Login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+             </div>
+             <button type="submit" class="btn">Login</button>
+             <div class="login-register">
+                <p>Don't have an account? <a href="#"class="register-link">Register</a></p>
+             </div>
+        </form>
+    </div>
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the terms and conditions</label>
+             </div>
+             <button type="submit" class="btn">Register</button>
+             <div class="login-register">
+                <p>Already have an account? <a href="#"
+                class="login-link">Login</a></p>
+             </div>
+        </form>
+    </div>
+</div>
+<!--login-->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="enter your email address">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="Login Now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- home section start -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h2><span>TILENGA T</span>RAVELS</h2>
+        <h3>Explore The Best Adventure in the Murchison National game park</h3>
+        <p>explore the savanah animals, amaizing vegetation and the beautiful water falls in the Nile river</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vi-btn active" data-src="image/elephant.mp4"></span>
+        <span class="vi-btn" data-src="image/leopard.mp4"></span>
+        <span class="vi-btn" data-src="image/baboon.mp4"></span>
+        <span class="vi-btn" data-src="image/waterfal.mp4"></span>
+        <span class="vi-btn" data-src="image/lion.mp4"></span>
+    </div>
+
+    <div class="video-cotainer">
+        <video src="image/elephant.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- book section ends -->
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>0</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/zebra.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="text"placeholder="number of guest">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+    </div>
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/firecamp.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-maker-alt"></i> Murchison firecamp </h3>
+                <p> Get the best firecamp experince deep in the murchison national game park</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/sunset.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-maker-alt"></i> Murchison sunset at river Nile </h3>
+                <p> Get the best sunset experince deep in the murchison national game park</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/lakeside.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-maker-alt"></i> Murchison sun raise </h3>
+                <p> Get the best sun raise experince deep in the murchison national game park</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/rhino.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-maker-alt"></i> Murchison wild animal </h3>
+                <p> Get the best wild animal experince deep in the murchison national game park</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts -->
+
+<section class="services" id="serevices">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>it a quite cool very relaxing place to be at</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>food and drinks</h3>
+            <p>it a quite cool very relaxing place to be at</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>it a quite cool very relaxing place to be at</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the game park</h3>
+            <p>it a quite cool very relaxing place to be at</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>it a quite cool very relaxing place to be at</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>it a quite cool very relaxing place to be at</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/el.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>the best expirence for adventure</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/lio.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>the best expirence for adventure</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/leo.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>the best expirence for adventure</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/neom-YpUFf0kOWQ0-unsplash.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>the best expirence for adventure</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gallery section ends -->
+
+<!-- review section ends -->
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="review-slider">
+        <div class="wrapper">
+
+            <div class="slider">
+                <div class="box">
+                    <img src="image/ben.jpg" alt="">
+                    <h3>J Ben</h3>
+                    <P>Murchison is the biggest game park in Uganda with most of the major and majority of the savannah wild animals.</P>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="box">
+                    <img src="image/milly.jpg" alt="">
+                    <h3>N Milly</h3>
+                    <P>Murchison is the biggest game park in Uganda with most of the major and majority of the savannah wild animals.</P>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="box">
+                    <img src="image/jacki.jpg" alt="">
+                    <h3>k Jackie</h3>
+                    <P>Murchison is the biggest game park in Uganda with most of the major and majority of the savannah wild animals.</P>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="box">
+                    <img src="image/william.jpg" alt="">
+                    <h3>S William</h3>
+                    <P>Murchison is the biggest game park in Uganda with most of the major and majority of the savannah wild animals.</P>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="box">
+                    <img src="image/shadia.jpg" alt="">
+                    <h3>N Shadia</h3>
+                    <P>Murchison is the biggest game park in Uganda with most of the major and majority of the savannah wild animals.</P>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="content">
+
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="image/lake view.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+
+</section>
+
+<!-- Brand section -->
+<section class="brand-container">
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slider"><img src="image/zebra.jpg" alt=""></div>
+            <div class="swiper-slider"><img src="image/mountain.jpg" alt=""></div>
+            <div class="swiper-slider"><img src="image/pulm.jpg" alt=""></div>
+            <div class="swiper-slider"><img src="image/sunset.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Custom js file link -->
+<script src="script.js"></script> 
+
+
+</body> 
+</html>
